@@ -28,7 +28,7 @@ ReAct_Chain_AI_Assistant/
 ├── legal_chain.py          # Chain for legal data
 ├── startup_masterclass_chain.py  # Chain for startup course content
 ├── helper.py               # Utility functions for the models and retrievers
-├── main.py                 # Main application script with the ReAct agent setup
+├── st_app.py                 # Main application script with the ReAct agent setup
 ├── process_documents.py    # Script to process documents and create vector stores
 ├── VectorStores/           # Vector database storage
 │   ├── startup_data_vector_store/
@@ -43,8 +43,8 @@ ReAct_Chain_AI_Assistant/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/react-chain-ai-assistant.git
-   cd react-chain-ai-assistant
+   git clone https://github.com/AvivaShooman/GenAI-Assignment-7.git
+   cd GenAI-Assignment-7
    ```
 
 2. **Create and activate a virtual environment**
@@ -71,7 +71,7 @@ ReAct_Chain_AI_Assistant/
 
 6. **Run the application**
    ```bash
-   python -m streamlit run main.py
+   python -m streamlit run st_app.py
    ```
 
 ## Usage
@@ -102,8 +102,8 @@ To add additional knowledge domains:
 1. Create a new vector store with your documents
 2. Implement a new chain in a separate file
 3. Add a retriever function in helper.py
-4. Register the new tool in main.py
-5. Update the UI in main.py to reflect the new capability
+4. Register the new tool in st_app.py
+5. Update the UI in st_app.py to reflect the new capability
 
 ## License
 

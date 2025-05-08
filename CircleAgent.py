@@ -2,7 +2,8 @@ from langchain import hub
 from langchain.agents import AgentExecutor, create_react_agent
 from langchain_core.messages import AIMessage, HumanMessage
 from langchain_core.tools import Tool
-# importing function from the some py files
+
+# Application modules
 from startup_chain import get_startup_data_chain
 from legal_chain import get_legal_data_chain
 from startup_masterclass_chain import get_startup_masterclass_chain

@@ -1,4 +1,4 @@
-#-----------------------( for legel data)----------------------------------
+#-----------------------( For legal data)----------------------------------
 # ---------------------------------------------------------------------------
 #----------------------( Contextualize question prompt )-----------------------------------
 # This system prompt helps the AI understand that it should reformulate the question
@@ -66,7 +66,7 @@ def get_legal_data_chain(llm,embedding):
     # `create_stuff_documents_chain` feeds all retrieved context into the LLM
     question_answer_chain = create_stuff_documents_chain(llm, qa_prompt)
 
-    # ----------------------------( Conbinging the both above chains )---------------------------------------
+    # ----------------------------( Combining both above chains )---------------------------------------
     # Create a retrieval chain that combines the history-aware retriever and the question answering chain
     legal_data_rag_chain = create_retrieval_chain(history_aware_retriever, question_answer_chain)
 
